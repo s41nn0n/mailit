@@ -115,6 +115,12 @@ export MAILIT_REJECTUNAUTHORIZED=[boolean]
 
 You can [run it from docker as well](https://hub.docker.com/r/dthree/mailit/), using environmental variables or passing it the `config.json`.
 
+## Auth
+
+This service defaults to no authentication. I can't and won't try to guess your flavor.
+
+Mailit uses express. The file ./middleware.js at the root of the directory exposes the app so you can add middleware hooks for auth logic.
+
 ## Why?
 
  - Security. Mailit can act as a relay for a secured environment so emails can be sent. Opening a REST API over HTTP to a DMZ can be better than opening several email ports directly outbound.
