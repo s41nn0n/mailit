@@ -100,7 +100,7 @@ Or reference the `config.json`:
 mailit --config [path-to-config.json]
 ```
 
-As environmental variables:
+As environment variables:
 
 ```bash
 export PORT=[web-port]
