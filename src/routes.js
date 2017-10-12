@@ -36,7 +36,7 @@ const sendEmail = (config, options) => {
 			subject: options.subject,
 			text: options.text,
 			html: options.html,
-			attachments: attachments,
+			attachments: attachments
 		};
 		transporter.sendMail(mailOptions, (error, info) => {
 		    if (error) {
