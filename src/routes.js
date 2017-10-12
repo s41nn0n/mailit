@@ -25,7 +25,7 @@ const createTransport = (config) => {
 const sendEmail = (config, options) => {
 	return new Promise((resolve, reject) => {
 		const transporter = createTransport(config);
-		attachments = null;
+		let attachments = null;
 
 		if (options.attachments)
 			attachments = JSON.parse(options.attachments);
