@@ -37,7 +37,7 @@ To send attachments use the nodemailer attachments syntax.
 [Link to nodemailer documents](https://community.nodemailer.com/using-attachments/)
 
 ```bash
-curl --data "to=d@me.net&subject=hi&text=hey world&attachments=[{\"filename\": \"t.txt\",\"content\":\"Hello My Test\"}]" http://127.0.0.1:3000/email
+curl --data "to=d@me.net&subject=hi&text=hey world&attachments=[{\"filename\": \"text1.txt\",\"content\":\"Hello World!\"}]" http://127.0.0.1:3000/email
 ```
 
 
